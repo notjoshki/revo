@@ -78,7 +78,7 @@ void cursor_set(Visibility setting) {
     curs_set(setting == VISIBLE);
 }
 
-#define SOMETHING_WENT_HELLA_WRONG -999
+#define SOMETHING_WENT_HELLA_WRONG 999
 
 static unsigned int attribute_to_ncurses(const Attribute attr) {
     switch (attr) {
