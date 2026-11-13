@@ -1,0 +1,10 @@
+project Default is
+   for Languages use ("Ada", "C");
+   for Source_Dirs use ("src", "revo");
+   for Object_Dir use "obj";
+   for Main use ("example.adb");
+
+   package Linker is
+      for Default_Switches ("Ada") use ("-lncurses");
+   end Linker;
+end Default;
