@@ -16,7 +16,7 @@ procedure Example is
    Minimum_Height : constant Natural := 10;
    Minimum_Width : constant Natural := 50;
 
-   Use_Dark_Theme : Boolean := True;
+   Use_Dark_Theme : Boolean := False;
 begin
    Revo.Initialize_Screen;
 
