@@ -167,3 +167,7 @@ int c_getmaxx() {
 void c_box(Window *win) {
     box(get_window(win), 0, 0);
 }
+
+void c_clear(Window *win) {
+    wclear(get_window(win));
+}

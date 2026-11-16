@@ -44,6 +44,7 @@ package Revo is
    procedure Move_Window (Win : not null access constant Window; Row : Natural; Column : Natural);
    procedure Background (Color_Pair : Natural; Win : access constant Window := null);
    procedure Box (Win : access constant Window := null);
+   procedure Clear (Win : access constant Window := null) with Import => True, Convention => C, External_Name => "c_clear";
 
 private
    package IC renames Interfaces.C;
