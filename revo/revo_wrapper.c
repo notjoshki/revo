@@ -119,7 +119,7 @@ static short color_to_ncurses_color(const Color color) {
         case YELLOW: return COLOR_YELLOW;
         case BLUE: return COLOR_BLUE;
         case MAGENTA: return COLOR_MAGENTA;
-        case CYAN: return COLOR_MAGENTA;
+        case CYAN: return COLOR_CYAN;
         case WHITE: return COLOR_WHITE;
         default: return -1;
     }

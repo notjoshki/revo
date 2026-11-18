@@ -23,9 +23,9 @@ package body Revo is
    end Refresh;
 
    procedure Move (Row : Natural; Column : Natural; Win : access constant Window := null) is
-      procedure c_move (win : access constant Window; y : IC.int; x : IC.int) with Import => True, Convention => C;
+      procedure c_move (y : IC.int; x : IC.int; win : access constant Window) with Import => True, Convention => C;
    begin
-      c_move (Win, IC.int (Row), IC.int (Column));
+      c_move (IC.int (Row), IC.int (Column), Win);
    end Move;
 
    procedure Move_Print (Row : Natural; Column : Natural; Message : String; Win : access constant Window := null) is
